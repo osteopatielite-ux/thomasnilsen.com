@@ -1,18 +1,23 @@
-/* === Global reset === */
+/* === Reset === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* === Colors & fonts === */
+/* === Base styling === */
 body {
   background: #F5F5F7;
-  color: #111827;
+  color: #1A1A1A;
   font-family: system-ui, sans-serif;
+  line-height: 1.5;
 }
 
-/* Layout 컨테이너 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .page-wrapper {
   min-height: 100vh;
   display: flex;
@@ -23,155 +28,134 @@ body {
   flex: 1;
 }
 
-/* === Header === */
+/* ==============================================
+   HEADER & NAV
+   ============================================== */
+
 .site-header {
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid #e5e7eb;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #E5E7EB;
 }
 
 .header-inner {
-  max-width: 960px;
+  max-width: 1040px;
   margin: 0 auto;
   padding: 14px 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
-.brand-title {
-  font-size: 20px;
-  font-weight: 700;
+/* LEFT: logo + name */
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.brand-subtitle {
+.moveo-logo {
+  height: 40px;
+  width: auto;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.brand-role {
   font-size: 12px;
-  color: #4B5563;
+  color: #5A5A5A;
 }
 
-.brand-klinikk {
+.brand-clinic {
   font-size: 11px;
-  text-transform: uppercase;
   color: #2563EB;
-  letter-spacing: 0.08em;
 }
 
-/* === Nav === */
+/* RIGHT: NAVIGATION */
 .main-nav {
   display: flex;
   gap: 18px;
 }
 
 .nav-link {
+  font-size: 14px;
   color: #4B5563;
   padding: 6px 10px;
   border-radius: 999px;
 }
 
 .nav-link:hover {
-  background: #EFF6FF;
-  color: #2563EB;
+  background: #E8F1FA;
+  color: #0051A0;
 }
 
-/* === Hero === */
+/* ==============================================
+   HERO SECTION
+   ============================================== */
+
 .hero {
-  max-width: 960px;
+  max-width: 1040px;
   margin: 0 auto;
-  padding: 32px 20px;
+  padding: 40px 20px;
 }
 
 .hero-image {
   width: 100%;
   border-radius: 16px;
   object-fit: cover;
-  max-height: 380px;
-  margin-bottom: 20px;
+  max-height: 480px;
 }
 
 .hero-title {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .hero-subtitle {
   font-size: 18px;
-  color: #4B5563;
-  margin-bottom: 16px;
+  color: #5A5A5A;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* === Buttons === */
+/* ==============================================
+   BUTTONS
+   ============================================== */
+
 .button-row {
   display: flex;
-  gap: 12px;
+  gap: 14px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .primary-button {
-  background: #2563EB;
-  color: #fff;
-  padding: 10px 20px;
+  background: #0051A0;
+  color: white;
+  padding: 12px 24px;
+  font-size: 15px;
   border-radius: 999px;
   font-weight: 500;
 }
 
 .primary-button:hover {
-  background: #1D4ED8;
+  background: #003A75;
 }
 
 .secondary-button {
   background: #E5E7EB;
-  color: #374151;
-  padding: 10px 20px;
-  border-radius: 999px;
-}
-
-.secondary-button:hover {
-  background: #D1D5DB;
-}
-
-/* === Section === */
-.section {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 32px 20px;
-}
-
-.section-title {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.section-text {
-  font-size: 16px;
-  color: #4B5563;
-  line-height: 1.6;
-}
-
-/* === Footer === */
-.site-footer {
-  border-top: 1px solid #e5e7eb;
-  background: #fff;
-}
-
-.footer-inner {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 12px 20px;
-  font-size: 12px;
-  color: #6B7280;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-/* === Responsive === */
-@media (max-width: 640px) {
-  .hero-title {
-    font-size: 28px;
-  }
-  .hero-subtitle {
-    font-size: 16px;
-  }
-}
+  color: #1A1A1A;
+  padding: 12px 24px;
+  font-size: 15px
