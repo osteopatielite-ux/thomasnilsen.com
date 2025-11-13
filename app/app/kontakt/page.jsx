@@ -1,28 +1,51 @@
 export const metadata = {
-  title: "Kontakt – Timebestilling hos Thomas Nilsen",
+  title: "Kontakt – Thomas Nilsen | Moveoklinikken Bodø",
   description:
-    "Kontakt Thomas Nilsen ved Moveoklinikken i Bodø for fysioterapi, osteopati, kognitiv terapi, løpsanalyse eller gruppeopplegg for diabetes.",
+    "Kontakt fysioterapeut, osteopat og kognitiv terapeut Thomas Nilsen ved Moveoklinikken i Bodø. Bestill time, send e-post eller finn adressen til klinikken.",
 };
 
 export default function KontaktPage() {
   return (
     <section className="section">
       <h1 className="section-title">Kontakt</h1>
+
       <p className="section-text">
-        For timebestilling eller spørsmål kan du ta kontakt på e-post eller via telefon.
+        For timebestilling, spørsmål eller en uforpliktende vurdering kan du ta kontakt
+        direkte via e-post eller besøke klinikken i Bodø. Jeg svarer som regel samme dag.
       </p>
+
       <p className="section-text">
         <strong>E-post:</strong>{" "}
         <a href="mailto:post@moveoklinikken.no?subject=Timebestilling%20hos%20Thomas">
           post@moveoklinikken.no
         </a>
-        <br />
-        <strong>Instagram:</strong>{" "}
-        <a href="https://instagram.com/osteopat_thomas">@osteopat_thomas</a>
       </p>
+
       <p className="section-text">
-        Klinikken holder til i Bodø. Ta kontakt dersom du er usikker på om jeg er riktig
-        person for deg – ofte holder det med en kort avklaring.
+        <strong>Telefon:</strong>  
+        (legg inn ditt nummer her – hvis du ønsker det med en gang kan jeg legge det inn for deg)
+      </p>
+
+      <p className="section-text">
+        <strong>Adresse:</strong><br />
+        Moveoklinikken  
+        Sjøgata 3  
+        8006 Bodø
+      </p>
+
+      <p className="section-text">
+        <a
+          className="primary-button"
+          href="https://www.google.com/maps?q=Moveoklinikken+Bodø"
+          target="_blank"
+        >
+          Åpne i Google Maps
+        </a>
+      </p>
+
+      <p className="section-text">
+        Gi gjerne beskjed på forhånd dersom du har spesielle behov eller ønsker en
+        vurdering av om fysioterapi, osteopati eller kognitiv terapi passer for deg.
       </p>
     </section>
   );
