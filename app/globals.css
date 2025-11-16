@@ -242,3 +242,69 @@ body {
     height: auto;
   }
 }
+/* HERO */
+.hero {
+  padding: 70px 20px;
+  background: #f7f9fc;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 22px;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #00bcd4;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  opacity: 0.85;
+}
+
+.hero-image {
+  flex-shrink: 0;
+}
+
+.portrait-img {
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-image img {
+    width: 300px;
+    height: auto;
+  }
+}
