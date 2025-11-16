@@ -14,7 +14,10 @@ export default function Home() {
             </p>
             <p className="hero-v2-location">Moveoklinikken · Bodø</p>
 
-            <a href="https://instagram.com/osteopat_thomas" className="hero-v2-btn">
+            <a
+              href="mailto:thomas@moveoklinikken.no?subject=Timebestilling"
+              className="hero-v2-btn"
+            >
               Bestill time
             </a>
           </div>
@@ -59,11 +62,11 @@ export default function Home() {
       <section className="section">
         <h2 className="section-title">Kontakt</h2>
         <p className="section-text">
-          For timeforespørsel eller spørsmål – kontakt meg via Instagram:
+          For timeforespørsel eller spørsmål – send e-post til:
         </p>
         <p className="section-text">
-          <a href="https://instagram.com/osteopat_thomas" target="_blank" className="link">
-            @osteopat_thomas
+          <a href="mailto:thomas@moveoklinikken.no" className="link">
+            thomas@moveoklinikken.no
           </a>
         </p>
       </section>
