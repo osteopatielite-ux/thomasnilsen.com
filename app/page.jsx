@@ -9,8 +9,12 @@ export default function Home() {
       <section className="hero">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>Bevegelse. Mestring. Helse.</h1>
-            <p>Fysioterapi • Osteopati • Kognitiv terapi i Bodø</p>
+
+            <h1>Smerter, stress eller tankekjør? Jeg hjelper deg videre.</h1>
+
+            <p>
+              Fysioterapi • Osteopati • Kognitiv terapi i Bodø
+            </p>
 
             <a href="mailto:thomas@moveoklinikken.no" className="hero-button">
               Bestill time
