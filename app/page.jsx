@@ -2,23 +2,29 @@ export default function Home() {
   return (
     <div>
 
-      {/* NY PORTRETT-HERO */}
-      <section className="hero-portrait">
-        <div className="hero-portrait-inner">
+      {/* HERO VERSJON 2 – MOVEOKLINIKKEN STIL */}
+      <section className="hero-v2">
+        <div className="hero-v2-inner">
 
-          <div className="hero-text">
-            <h1 className="hero-title">Thomas Nilsen</h1>
-            <p className="hero-subtitle">
+          {/* TEKST */}
+          <div className="hero-v2-text">
+            <h1 className="hero-v2-title">Thomas Nilsen</h1>
+            <p className="hero-v2-subtitle">
               Fysioterapeut • Osteopat • Kognitiv terapeut
             </p>
-            <p className="hero-location">Moveoklinikken · Bodø</p>
+            <p className="hero-v2-location">Moveoklinikken · Bodø</p>
+
+            <a href="https://instagram.com/osteopat_thomas" className="hero-v2-btn">
+              Bestill time
+            </a>
           </div>
 
-          <div className="hero-image-container">
+          {/* PORTRETTBILDE */}
+          <div className="hero-v2-image-wrapper">
             <img
               src="/portrett.jpg"
               alt="Portrett av Thomas Nilsen"
-              className="hero-image"
+              className="hero-v2-image"
             />
           </div>
 
