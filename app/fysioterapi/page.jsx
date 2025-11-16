@@ -5,39 +5,56 @@ export default function Fysioterapi() {
       <h1 className="section-title">Fysioterapi</h1>
 
       <p className="section-text">
-        Fysioterapi handler om å forstå hvordan kroppen fungerer i bevegelse, 
-        hvordan smerter oppstår, og hva som skal til for at du skal komme tilbake 
-        til en sterk og funksjonell hverdag.
+        Fysioterapi er en sentral del av moderne skolemedisin og bygger på
+        vitenskapelig kunnskap innen anatomi, fysiologi, nevrologi og biomekanikk.
+        Fysioterapeuter jobber med kropp, bevegelse og funksjon – og målet er alltid
+        å hjelpe deg til mindre smerte og bedre mestring i hverdagen.
+      </p>
+
+      <h2 className="section-title">Hva gjør en fysioterapeut?</h2>
+      <p className="section-text">
+        En fysioterapeut forebygger og behandler skader og sykdommer som gir smerte
+        eller nedsatt funksjon i muskel- og skjelettsystemet. Behandlingen bygger på
+        grundig undersøkelse, vurdering og en felles plan ut fra hva du ønsker hjelp med.
       </p>
 
       <p className="section-text">
-        Jeg jobber med en kombinasjon av manuell behandling, treningsveiledning, 
-        kartlegging av belastning og konkrete tiltak som gir trygghet og mestring.  
-        Målet er at du skal få mindre smerter, bedre bevegelighet og en kropp som fungerer i hverdagen.
+        Målet er at du skal utvikle, gjenvinne eller vedlikeholde funksjonsevne, utnytte
+        egne ressurser og bli mer aktiv i å påvirke egen helse. Fysioterapeuten har
+        spesialkompetanse på både akutte og langvarige plager i muskler og ledd.
       </p>
 
-      <h3 className="section-title" style={{ fontSize: "22px", marginTop: "30px" }}>
-        Vanlige problemstillinger jeg behandler:
-      </h3>
+      <h2 className="section-title">En aktiv tilnærming gir best resultater</h2>
+      <p className="section-text">
+        For både akutte og langvarige smerter er riktig trening og veiledning avgjørende
+        for varige resultater. Passiv behandling alene har ofte liten dokumentert effekt.
+        Hos Moveo legger vi derfor stor vekt på en aktiv, trygg og målrettet tilnærming.
+      </p>
 
-      <ul className="service-list" style={{ marginBottom: "20px" }}>
-        <li>Ryggsmerter og låsninger</li>
-        <li>Nakke- og skuldersmerter</li>
-        <li>Knesmerter, hofteplager og stivhet</li>
-        <li>Overbelastningsskader hos aktive</li>
-        <li>Akutte smerter etter trening eller arbeid</li>
-        <li>Muskelspenninger og redusert bevegelse</li>
+      <p className="section-text">
+        Vi hjelper deg å bruke kroppen riktig, gir konkrete råd og tilpasset opptrening,
+        og gjør deg trygg på hva du kan gjøre selv for å få bedre funksjon – ikke bare
+        nå, men også på lang sikt.
+      </p>
+
+      <h2 className="section-title">Hva kan vi behandle?</h2>
+
+      <ul className="service-list">
+        <li>Generelle muskel- og skjelettplager</li>
+        <li>Nakke-, skulder- og ryggsmerter</li>
+        <li>Betennelser og overbelastningsskader</li>
+        <li>Idrettsskader</li>
+        <li>Rehabilitering etter operasjoner eller sykdom</li>
+        <li>Artrose</li>
+        <li>KOLS og hjertesykdom</li>
+        <li>Kreft – tilrettelagt trening under og etter behandling</li>
       </ul>
 
+      <h2 className="section-title">Målet med fysioterapi</h2>
       <p className="section-text">
-        Som fysioterapeut legger jeg stor vekt på å finne årsaken til plagene dine 
-        og hvordan belastningen i hverdagen påvirker kroppen. Vi bygger opp et 
-        behandlingsopplegg som både lindrer smerte og gir langsiktig bedring.
-      </p>
-
-      <p className="section-text">
-        Fysioterapi passer for alle — enten du er aktiv, jobber mye fysisk, 
-        sitter mye i ro, eller har smerter uten tydelig årsak.
+        Målet er å skape positive endringsprosesser og gi deg trygghet, kontroll og
+        bedre funksjon. Vår filosofi er at du som pasient er den viktigste faktoren 
+        i egen helse – og sammen finner vi veien videre.
       </p>
 
     </div>
