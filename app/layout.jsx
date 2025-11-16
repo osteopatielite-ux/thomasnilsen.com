@@ -2,7 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Thomas Nilsen – Fysioterapi, Osteopati, Kognitiv Terapi",
-  description: "Moveoklinikken Bodø – behandling, bevegelse, løping og helse.",
+  description: "Moveoklinikken Bodø – behandling, trening, løpsanalyse og helse.",
 };
 
 export default function RootLayout({ children }) {
@@ -20,12 +20,18 @@ export default function RootLayout({ children }) {
               <span className="header-name">Thomas Nilsen</span>
             </div>
 
-            {/* NAV + BESTILL TIME */}
+            {/* NAVIGASJON */}
             <nav className="header-nav">
               <a href="/" className="nav-link">Hjem</a>
               <a href="/om-meg" className="nav-link">Om meg</a>
               <a href="/kontakt" className="nav-link">Kontakt</a>
-              <a href="https://instagram.com/osteopat_thomas" className="nav-book">
+
+              {/* BESTILL TIME */}
+              <a
+                href="https://instagram.com/osteopat_thomas"
+                className="nav-book"
+                target="_blank"
+              >
                 Bestill time
               </a>
             </nav>
@@ -33,8 +39,10 @@ export default function RootLayout({ children }) {
           </div>
         </header>
 
-        {/* INNHOLD */}
-        <main className="main">{children}</main>
+        {/* HOVEDINNHOLD */}
+        <main className="main">
+          {children}
+        </main>
 
         {/* FOOTER */}
         <footer className="footer">
