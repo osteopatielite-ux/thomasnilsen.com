@@ -165,7 +165,15 @@ body {
     text-align: center;
     gap: 30px;
   }
+.service-link {
+  color: #0a6cff;
+  text-decoration: none;
+  font-weight: 500;
+}
 
+.service-link:hover {
+  text-decoration: underline;
+}
   .hero-v2-image-wrapper {
     width: 75%;
   }
