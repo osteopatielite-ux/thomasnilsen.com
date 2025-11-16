@@ -2,20 +2,17 @@ import "./globals.css";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Thomas Nilsen – Fysioterapi, osteopati og kognitiv terapi i Bodø",
+  title: "Thomas Nilsen – Fysioterapeut, Osteopat og Kognitiv terapeut i Bodø",
   description:
-    "Thomas Nilsen ved Moveoklinikken i Bodø tilbyr fysioterapi, osteopati, kognitiv terapi, behandling av smerter, stress, overbelastning og løpsanalyse.",
+    "Behandling av smerter, stress og overbelastning. Fysioterapi, osteopati og kognitiv terapi hos Thomas Nilsen ved Moveoklinikken i Bodø.",
   keywords: [
     "Fysioterapi Bodø",
-    "Fysioterapeut Bodø",
     "Osteopati Bodø",
-    "Osteopat Bodø",
     "Kognitiv terapi Bodø",
-    "Kognitiv terapeut Bodø",
     "Thomas Nilsen",
     "Moveoklinikken",
-    "Løpsanalyse Bodø",
-    "Smerter behandling Bodø"
+    "Fysioterapeut",
+    "Osteopat",
   ],
 };
 
@@ -23,13 +20,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="no">
       <body>
+
+        {/* PAGE WRAPPER */}
         <div className="page-wrapper">
 
           {/* HEADER */}
           <header className="site-header">
             <div className="header-inner">
 
-              {/* LOGO + NAVN */}
+              {/* BRAND + LOGO */}
               <div className="brand-wrapper">
                 <img
                   src="/moveo-logo.png"
@@ -52,10 +51,11 @@ export default function RootLayout({ children }) {
                 <Link className="nav-link" href="/om-meg">Om meg</Link>
                 <Link className="nav-link" href="/kontakt">Kontakt</Link>
               </nav>
+
             </div>
           </header>
 
-          {/* SIDEINNHOLD */}
+          {/* MAIN CONTENT */}
           <main className="page-inner">
             {children}
           </main>
@@ -63,12 +63,13 @@ export default function RootLayout({ children }) {
           {/* FOOTER */}
           <footer className="site-footer">
             <div className="footer-inner">
-              <span>© {new Date().getFullYear()} Thomas Nilsen – Moveoklinikken Bodø</span>
-              <span>Fysioterapi • Osteopati • Kognitiv terapi • Løpsanalyse</span>
+              <span>© {new Date().getFullYear()} Thomas Nilsen – Moveoklinikken</span>
+              <span>Fysioterapi • Osteopati • Kognitiv terapi • Bodø</span>
             </div>
           </footer>
 
         </div>
+
       </body>
     </html>
   );
