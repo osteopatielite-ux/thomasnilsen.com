@@ -22,7 +22,7 @@ export default function Home() {
               src="/portrett.jpg"
               width={420}
               height={420}
-              alt="Thomas Nilsen portrett"
+              alt="Thomas Nilsen"
               className="portrait-img"
               priority
             />
@@ -34,13 +34,13 @@ export default function Home() {
       <section className="section">
         <h2 className="section-title">Velkommen</h2>
         <p className="section-text">
-          Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø. Jeg tilbyr fysioterapi,
-          osteopati og kognitiv terapi – med fokus på smerter, stress, overbelastning og
-          individuelt tilpasset behandling.
+          Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø.  
+          Jeg tilbyr fysioterapi, osteopati og kognitiv terapi – med fokus på 
+          smerter, stress, overbelastning og individuelt tilpasset behandling.
         </p>
       </section>
 
-      {/* TJENESTER – klikkbare */}
+      {/* TJENESTER */}
       <section className="section">
         <h2 className="section-title">Tjenester</h2>
         <ul className="service-list">
