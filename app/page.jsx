@@ -1,20 +1,32 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
 
-      {/* HERO */}
-      <section className="hero-section">
-        <div className="hero-overlay">
-          <h1 className="hero-title">Bevegelse. Mestring. Helse.</h1>
-          <p className="hero-subtitle">
-            Fysioterapi • Osteopati • Kognitiv terapi i Bodø
-          </p>
+      {/* HERO – portrett + tekst */}
+      <section className="hero">
+        <div className="hero-content">
+          <div className="hero-text">
+            <h1>Bevegelse. Mestring. Helse.</h1>
+            <p>Fysioterapi • Osteopati • Kognitiv terapi i Bodø</p>
 
-          <Link href="mailto:thomas@moveoklinikken.no" className="hero-button">
-            Bestill time
-          </Link>
+            <a href="mailto:thomas@moveoklinikken.no" className="hero-button">
+              Bestill time
+            </a>
+          </div>
+
+          <div className="hero-image">
+            <Image
+              src="/portrett.jpg"
+              width={420}
+              height={420}
+              alt="Thomas Nilsen portrett"
+              className="portrait-img"
+              priority
+            />
+          </div>
         </div>
       </section>
 
@@ -22,48 +34,21 @@ export default function Home() {
       <section className="section">
         <h2 className="section-title">Velkommen</h2>
         <p className="section-text">
-          Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø.  
-          Jeg tilbyr fysioterapi, osteopati og kognitiv terapi – med fokus på 
-          smerter, stress, overbelastning, og individuell tilpasset behandling.
+          Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø. Jeg tilbyr fysioterapi,
+          osteopati og kognitiv terapi – med fokus på smerter, stress, overbelastning og
+          individuelt tilpasset behandling.
         </p>
       </section>
 
-      {/* TJENESTER */}
+      {/* TJENESTER – klikkbare */}
       <section className="section">
         <h2 className="section-title">Tjenester</h2>
-
         <ul className="service-list">
-
-          <li>
-            <Link href="/fysioterapi" className="service-link">
-              Fysioterapi og manuell behandling
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/osteopati" className="service-link">
-              Osteopati
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/kognitiv-terapi" className="service-link">
-              Kognitiv terapi
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/lopsanalyse" className="service-link">
-              Løpsanalyse og teknikkvurdering
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/terskeltest" className="service-link">
-              Terskel- og laktattest
-            </Link>
-          </li>
-
+          <li><Link href="/fysioterapi">Fysioterapi og manuell behandling</Link></li>
+          <li><Link href="/osteopati">Osteopati</Link></li>
+          <li><Link href="/kognitiv-terapi">Kognitiv terapi</Link></li>
+          <li><Link href="/lopsanalyse">Løpsanalyse og teknikkvurdering</Link></li>
+          <li><Link href="/laktat">Terskel- og laktattest</Link></li>
         </ul>
       </section>
 
@@ -74,9 +59,11 @@ export default function Home() {
           For timeforespørsel eller spørsmål – send e-post til:
         </p>
 
-        <a href="mailto:thomas@moveoklinikken.no" className="contact-email">
-          thomas@moveoklinikken.no
-        </a>
+        <p className="section-text">
+          <a href="mailto:thomas@moveoklinikken.no" className="contact-link">
+            thomas@moveoklinikken.no
+          </a>
+        </p>
       </section>
 
     </div>
