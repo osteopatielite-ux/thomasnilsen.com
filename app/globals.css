@@ -308,3 +308,23 @@ body {
     height: auto;
   }
 }
+/* Lenker i tjenestelisten */
+.service-list a {
+  color: #000 !important;       /* svart */
+  font-weight: 600;             /* fet */
+  text-decoration: none;        /* fjern understrek */
+}
+
+.service-list a:hover {
+  text-decoration: underline;   /* valgfritt – penere hover */
+}
+
+/* Generell styling hvis du vil at ALLE lenker skal være svarte */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
