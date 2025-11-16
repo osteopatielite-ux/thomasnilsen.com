@@ -16,9 +16,9 @@ export default function Home() {
       <section className="section">
         <h2 className="section-title">Velkommen</h2>
         <p className="section-text">
-          Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø.  
-          Jeg tilbyr fysioterapi, osteopati og kognitiv terapi – med fokus på 
-          smerter, stress, overbelastning, og individuell tilpasset behandling.
+          Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø.
+          Jeg tilbyr fysioterapi, osteopati og kognitiv terapi – med fokus på
+          smerter, stress, overbelastning og individuell tilpasset behandling.
         </p>
       </section>
 
@@ -39,7 +39,22 @@ export default function Home() {
       {/* KONTAKT */}
       <section className="section">
         <h2 className="section-title">Kontakt</h2>
+
         <p className="section-text">
           Du kan ta kontakt via Instagram:
         </p>
-        <p className="section-text
+
+        <p className="section-text">
+          <a
+            href="https://instagram.com/osteopat_thomas"
+            className="contact-link"
+            target="_blank"
+          >
+            @osteopat_thomas
+          </a>
+        </p>
+      </section>
+
+    </div>
+  );
+}
