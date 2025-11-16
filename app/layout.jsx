@@ -1,91 +1,68 @@
-// app/layout.jsx
-import "./globals.css";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Thomas Nilsen – Moveoklinikken Bodø",
-  description:
-    "Fysioterapi, osteopati og kognitiv terapi for smerter, stress og tankekjør i Bodø.",
-};
-
-export default function RootLayout({ children }) {
+export default function Home() {
   return (
-    <html lang="no">
-      <body>
+    <div>
 
-        {/* ---------------- HEADER ---------------- */}
-        <header className="header">
-          <div className="header-inner">
+      {/* HERO */}
+      <section className="hero-section">
+        <div className="hero-wrapper">
+          <img
+            src="/portrett.jpg"
+            alt="Thomas Nilsen"
+            className="hero-image"
+          />
 
-            {/* Logo + navn */}
-            <div className="header-left">
-              <img src="/moveo-logo.png" alt="Moveo logo" className="header-logo" />
-              <span className="header-name">Thomas Nilsen</span>
-            </div>
+          <div className="hero-text">
+            <h1 className="hero-title">Smerter, stress eller tankekjør?</h1>
+            <p className="hero-subtitle">Jeg hjelper deg videre.</p>
 
-            {/* Navigasjon */}
-            <nav className="nav">
-              <Link href="/">Hjem</Link>
-              <Link href="/fysioterapi">Fysioterapi</Link>
-              <Link href="/osteopati">Osteopati</Link>
-              <Link href="/kognitiv-terapi">Kognitiv terapi</Link>
-              <Link href="/kontakt">Kontakt</Link>
-            </nav>
-
-            {/* Knapp */}
-            <a href="mailto:thomas@moveoklinikken.no" className="header-button">
+            <a href="mailto:thomas@moveoklinikken.no" className="hero-button">
               Bestill time
             </a>
-
           </div>
-        </header>
+        </div>
+      </section>
 
-        {/* Sideinnhold */}
-        <main className="page-wrapper">{children}</main>
+      {/* MAIN CONTENT */}
+      <div className="page-wrapper">
 
-        {/* ---------------- FOOTER ---------------- */}
-        <footer className="footer">
-          <div className="footer-inner">
+        {/* INTRO */}
+        <section className="section">
+          <h2 className="section-title">Velkommen</h2>
+          <p className="section-text">
+            Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø.
+            Jeg tilbyr fysioterapi, osteopati og kognitiv terapi – med fokus på
+            smerter, stress, overbelastning og individuelt tilpasset behandling.
+          </p>
+        </section>
 
-            <div className="footer-col">
-              <img src="/moveo-logo.png" className="footer-logo" />
-              <p className="footer-name">Thomas Nilsen</p>
-              <p className="footer-role">
-                Fysioterapeut • Osteopat • Kognitiv terapeut
-              </p>
-            </div>
+        {/* TJENESTER */}
+        <section className="section">
+          <h2 className="section-title">Tjenester</h2>
 
-            <div className="footer-col">
-              <h4>Behandling</h4>
-              <Link href="/fysioterapi">Fysioterapi</Link>
-              <Link href="/osteopati">Osteopati</Link>
-              <Link href="/kognitiv-terapi">Kognitiv terapi</Link>
-              <Link href="/lopsanalyse">Løpsanalyse</Link>
-              <Link href="/laktat">Laktattest</Link>
-            </div>
+          <ul className="service-list">
+            <li><Link href="/fysioterapi">Fysioterapi og manuell behandling</Link></li>
+            <li><Link href="/osteopati">Osteopati</Link></li>
+            <li><Link href="/kognitiv-terapi">Kognitiv terapi</Link></li>
+            <li><Link href="/lopsanalyse">Løpsanalyse og teknikkvurdering</Link></li>
+            <li><Link href="/terskeltest">Terskel- og laktattest</Link></li>
+          </ul>
+        </section>
 
-            <div className="footer-col">
-              <h4>Kontakt</h4>
-              <a href="mailto:thomas@moveoklinikken.no">
-                thomas@moveoklinikken.no
-              </a>
-              <a
-                href="https://instagram.com/osteopat_thomas"
-                target="_blank"
-              >
-                @osteopat_thomas
-              </a>
-              <p>Moveoklinikken, Bodø</p>
-            </div>
+        {/* KONTAKT */}
+        <section className="section">
+          <h2 className="section-title">Kontakt</h2>
+          <p className="section-text">
+            For timeforespørsel eller spørsmål – send e-post til:
+          </p>
 
-          </div>
+          <a className="contact-email" href="mailto:thomas@moveoklinikken.no">
+            thomas@moveoklinikken.no
+          </a>
+        </section>
 
-          <div className="footer-bottom">
-            © {new Date().getFullYear()} Thomas Nilsen – Moveoklinikken Bodø
-          </div>
-        </footer>
-
-      </body>
-    </html>
+      </div>
+    </div>
   );
 }
