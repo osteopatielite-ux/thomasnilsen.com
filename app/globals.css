@@ -328,3 +328,45 @@ a {
 a:hover {
   opacity: 0.8;
 }
+/* Sentrerer alt innhold under hero */
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Seksjon styling */
+.section {
+  margin-top: 60px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Liste-stil */
+.service-list li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Fjern blått på linker – gjør dem sorte og profesjonelle */
+.service-list a,
+.contact-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.service-list a:hover,
+.contact-link:hover {
+  text-decoration: underline;
+}
