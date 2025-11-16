@@ -10,6 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="no">
       <body>
 
+        {/* HEADER */}
         <header className="site-header">
           <div className="header-inner">
 
@@ -26,9 +27,8 @@ export default function RootLayout({ children }) {
               <a href="/kontakt" className="nav-link">Kontakt</a>
 
               <a
-                href="https://instagram.com/osteopat_thomas"
+                href="mailto:thomas@moveoklinikken.no?subject=Timebestilling"
                 className="nav-book"
-                target="_blank"
               >
                 Bestill time
               </a>
