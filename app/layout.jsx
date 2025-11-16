@@ -1,19 +1,8 @@
 import "./globals.css";
-import Link from "next/link";
 
 export const metadata = {
-  title: "Thomas Nilsen – Fysioterapeut, Osteopat og Kognitiv terapeut i Bodø",
-  description:
-    "Behandling av smerter, stress og overbelastning. Fysioterapi, osteopati og kognitiv terapi hos Thomas Nilsen ved Moveoklinikken i Bodø.",
-  keywords: [
-    "Fysioterapi Bodø",
-    "Osteopati Bodø",
-    "Kognitiv terapi Bodø",
-    "Thomas Nilsen",
-    "Moveoklinikken",
-    "Fysioterapeut",
-    "Osteopat",
-  ],
+  title: "Thomas Nilsen – Fysioterapi, Osteopati, Kognitiv Terapi",
+  description: "Moveoklinikken Bodø – behandling, bevegelse, løping og helse.",
 };
 
 export default function RootLayout({ children }) {
@@ -21,54 +10,36 @@ export default function RootLayout({ children }) {
     <html lang="no">
       <body>
 
-        {/* PAGE WRAPPER */}
-        <div className="page-wrapper">
+        {/* HEADER */}
+        <header className="header">
+          <div className="header-inner">
 
-          {/* HEADER */}
-          <header className="site-header">
-            <div className="header-inner">
-
-              {/* BRAND + LOGO */}
-              <div className="brand-wrapper">
-                <img
-                  src="/moveo-logo.png"
-                  alt="Moveo logo"
-                  className="moveo-logo"
-                />
-
-                <div className="brand-text">
-                  <div className="brand-name">Thomas Nilsen</div>
-                  <div className="brand-role">
-                    Fysioterapeut • Osteopat • Kognitiv terapeut
-                  </div>
-                  <div className="brand-clinic">Moveoklinikken · Bodø</div>
-                </div>
-              </div>
-
-              {/* NAV */}
-              <nav className="main-nav">
-                <Link className="nav-link" href="/">Hjem</Link>
-                <Link className="nav-link" href="/om-meg">Om meg</Link>
-                <Link className="nav-link" href="/kontakt">Kontakt</Link>
-              </nav>
-
+            {/* LOGO + NAVN */}
+            <div className="header-left">
+              <img src="/moveo-logo.png" alt="Moveoklinikken logo" className="header-logo" />
+              <span className="header-name">Thomas Nilsen</span>
             </div>
-          </header>
 
-          {/* MAIN CONTENT */}
-          <main className="page-inner">
-            {children}
-          </main>
+            {/* NAV + BESTILL TIME */}
+            <nav className="header-nav">
+              <a href="/" className="nav-link">Hjem</a>
+              <a href="/om-meg" className="nav-link">Om meg</a>
+              <a href="/kontakt" className="nav-link">Kontakt</a>
+              <a href="https://instagram.com/osteopat_thomas" className="nav-book">
+                Bestill time
+              </a>
+            </nav>
 
-          {/* FOOTER */}
-          <footer className="site-footer">
-            <div className="footer-inner">
-              <span>© {new Date().getFullYear()} Thomas Nilsen – Moveoklinikken</span>
-              <span>Fysioterapi • Osteopati • Kognitiv terapi • Bodø</span>
-            </div>
-          </footer>
+          </div>
+        </header>
 
-        </div>
+        {/* INNHOLD */}
+        <main className="main">{children}</main>
+
+        {/* FOOTER */}
+        <footer className="footer">
+          © {new Date().getFullYear()} Thomas Nilsen · Moveoklinikken Bodø
+        </footer>
 
       </body>
     </html>
