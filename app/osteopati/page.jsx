@@ -1,44 +1,58 @@
-export default function Osteopati() {
+export default function Home() {
   return (
-    <div className="section">
+    <div>
 
-      <h1 className="section-title">Osteopati</h1>
+      {/* HERO */}
+      <section className="hero-section">
+        <div className="hero-overlay">
+          <h1 className="hero-title">Bevegelse. Mestring. Helse.</h1>
+          <p className="hero-subtitle">
+            Fysioterapi • Osteopati • Kognitiv terapi i Bodø
+          </p>
+        </div>
+      </section>
 
-      <p className="section-text">
-        Osteopati er en helhetlig tilnærming til muskel- og skjelettplager.
-        Metoden bygger på forståelsen av hvordan kroppens systemer påvirker hverandre:
-        muskler, ledd, bindevev, nervesystem og sirkulasjon.
-      </p>
+      {/* INTRO */}
+      <section className="section">
+        <h2 className="section-title">Velkommen</h2>
+        <p className="section-text">
+          Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø.
+          Jeg tilbyr fysioterapi, osteopati og kognitiv terapi – med fokus på 
+          smerter, stress, overbelastning og individuell tilpasset behandling.
+        </p>
+      </section>
 
-      <p className="section-text">
-        Målet med osteopatisk behandling er å gjenopprette naturlig bevegelighet,
-        redusere smerter og skape bedre balanse i kroppen. Behandlingen er rolig,
-        presis og tilpasset hver enkelt pasient.
-      </p>
+      {/* TJENESTER */}
+      <section className="section">
+        <h2 className="section-title">Tjenester</h2>
 
-      <h3 className="section-title" style={{ fontSize: "22px", marginTop: "30px" }}>
-        Hva jeg behandler med osteopati:
-      </h3>
+        <ul className="service-list">
+          <li>Fysioterapi og manuell behandling</li>
+          <li>Osteopati</li>
+          <li>Kognitiv terapi</li>
+          <li>Behandling av stress og overbelastning</li>
+          <li>Løpsanalyse og skadeforebygging</li>
+          <li>Diabetesgruppe – trening og livsstil</li>
+        </ul>
+      </section>
 
-      <ul className="service-list" style={{ marginBottom: "20px" }}>
-        <li>Nakke- og skuldersmerter</li>
-        <li>Spenningshodepine og migrene</li>
-        <li>Ryggplager og stivhet</li>
-        <li>Bekken- og hoftesmerter</li>
-        <li>Brystsmerter og pustrelatert muskelspenning</li>
-        <li>Spenningsmønstre etter stress og langvarig belastning</li>
-      </ul>
+      {/* KONTAKT */}
+      <section className="section">
+        <h2 className="section-title">Kontakt</h2>
 
-      <p className="section-text">
-        Som osteopat kombinerer jeg manuell behandling med funksjonell forståelse
-        av kroppen. Vi ser på årsaker, sammenhenger og kompenserende mønstre
-        som kan stå bak plagene dine.
-      </p>
+        <p className="section-text">Du kan ta kontakt via Instagram:</p>
 
-      <p className="section-text">
-        Behandlingen passer for både akutte og langvarige plager, og er særlig nyttig
-        ved komplekse tilstander hvor kroppen har havnet i ubalanse over tid.
-      </p>
+        <p className="section-text">
+          <a
+            href="https://instagram.com/osteopat_thomas"
+            className="contact-link"
+            target="_blank"
+          >
+            @osteopat_thomas
+          </a>
+        </p>
+
+      </section>
 
     </div>
   );
