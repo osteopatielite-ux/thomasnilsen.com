@@ -146,4 +146,63 @@ body {
 .section-title {
   font-size: 28px;
   font-weight: 600;
-  margin-bott
+  margin-bottom: 12px;
+}
+
+.section-text {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.service-list li {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 60px;
+  background: #fafafa;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/* MOBILSTIL */
+@media (max-width: 800px) {
+  .hero-portrait-inner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-image-container {
+    width: 75%;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-nav {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
