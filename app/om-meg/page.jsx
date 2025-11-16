@@ -1,28 +1,44 @@
-export const metadata = {
-  title: "Om Thomas Nilsen – Moveoklinikken i Bodø",
-  description:
-    "Les mer om bakgrunn, erfaring og tilnærming til behandling hos fysioterapeut, osteopat og kognitiv terapeut Thomas Nilsen ved Moveoklinikken i Bodø.",
-};
-
-export default function OmMegPage() {
+export default function OmMeg() {
   return (
-    <section className="section">
+    <div className="section">
+
       <h1 className="section-title">Om meg</h1>
+
       <p className="section-text">
-        Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø. Jeg er utdannet
-        fysioterapeut, osteopat og kognitiv terapeut, og har over 20 års erfaring innen
-        helsefag fra både kommunal og privat praksis.
+        Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø.
+        Jeg er utdannet fysioterapeut, osteopat og kognitiv terapeut
+        med over 20 års erfaring innen helsefag – både i kommunal og privat praksis.
       </p>
+
       <p className="section-text">
-        I løpet av årene har jeg jobbet med et bredt spekter av pasientgrupper – fra akutte
-        idrettsskader til langvarige muskel- og skjelettplager, stressrelaterte plager og
-        kroniske sykdommer som krever tett oppfølging over tid.
+        Min tilnærming til behandling handler om å forstå hele mennesket.
+        Kropp, stress, søvn, belastning og livssituasjon påvirker hverandre.
+        Jeg jobber derfor både fysisk, manuelt og samtalebasert for å
+        hjelpe pasienter med å få mindre smerter, bedre funksjon og mer overskudd.
       </p>
+
       <p className="section-text">
-        Jeg er opptatt av å kombinere det kroppslige og det mentale: hvordan belastning,
-        tanker, følelser og hverdagsliv henger sammen. Målet er at du skal forstå mer av
-        dine egne plager, og få konkrete verktøy som faktisk passer inn i livet ditt.
+        Jeg behandler blant annet:
       </p>
-    </section>
+
+      <ul className="service-list" style={{ marginBottom: "20px" }}>
+        <li>Smerter i rygg, hofte, kne, skulder og nakke</li>
+        <li>Stress og overbelastning</li>
+        <li>Hodepine og muskelspenninger</li>
+        <li>Nedsatt bevegelse og stivhet</li>
+        <li>Løpsrelaterte plager og overtrening</li>
+      </ul>
+
+      <p className="section-text">
+        Jeg tilbyr også kognitiv terapi for deg som opplever tankekjør,
+        stress, bekymringer eller ønsker bedre mental robusthet.
+      </p>
+
+      <p className="section-text">
+        Målet mitt er at du skal oppleve trygghet, forståelse og få konkrete verktøy
+        som hjelper deg til en bedre hverdag.  
+      </p>
+
+    </div>
   );
 }
