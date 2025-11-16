@@ -1,66 +1,132 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Global styles */
-body {
-  @apply bg-white text-neutral-900 antialiased;
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* PAGE STRUCTURE */
 .page-wrapper {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .page-inner {
   flex: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Header */
+/* HEADER */
 .site-header {
-  @apply w-full border-b border-neutral-200 bg-white;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .header-inner {
-  @apply max-w-5xl mx-auto px-4 py-4 flex justify-between items-center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
+/* BRAND */
 .brand-wrapper {
-  @apply flex items-center gap-4;
-}
-
-.brand-text {
-  @apply leading-tight;
-}
-
-.brand-name {
-  @apply text-xl font-semibold;
-}
-
-.brand-role {
-  @apply text-sm text-neutral-600;
-}
-
-.brand-clinic {
-  @apply text-sm text-neutral-500;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .moveo-logo {
-  height: 48px;
+  height: 42px;
   width: auto;
 }
 
-/* Nav */
-.nav-link {
-  @apply text-neutral-700 hover:text-black ml-6;
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
 }
 
-/* Footer */
+.brand-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.brand-role {
+  font-size: 15px;
+  color: #444;
+}
+
+.brand-clinic {
+  font-size: 14px;
+  color: #666;
+}
+
+/* NAV */
+.main-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 15px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #00c4d8;
+}
+
+/* FOOTER */
 .site-footer {
-  @apply border-t border-neutral-200 bg-gray-50 py-6 mt-12;
+  border-top: 1px solid #e5e5e5;
+  background: #fafafa;
+  padding: 20px 0;
 }
 
 .footer-inner {
-  @apply max-w-5xl mx-auto px-4 text-sm text-neutral-600 flex flex-col gap-1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .main-nav {
+    padding-top: 10px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .moveo-logo {
+    height: 36px;
+  }
 }
