@@ -14,84 +14,31 @@ body {
   line-height: 1.6;
 }
 
-/* Remove blue links */
+/* Remove blue link color */
 a {
-  color: #000;
+  color: #000 !important;
   text-decoration: none;
 }
 
-a:hover {
-  opacity: 0.7;
-}
-
-/* ----------------------------
-   HEADER
------------------------------ */
-.header {
-  width: 100%;
-  background: white;
-  border-bottom: 1px solid #eee;
-  padding: 18px 0;
-}
-
-.header-inner {
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 0 25px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.header-logo {
-  height: 55px;
-}
-
-.header-name {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-}
-
-.header-button {
-  background: #00c8c8;
-  color: white !important;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-weight: 600;
-}
 
 /* ----------------------------
    HERO SECTION
 ----------------------------- */
+
 .hero-section {
   background: #f7f8fa;
-  padding: 85px 20px;
+  padding: 80px 20px;
 }
 
 .hero-wrapper {
   max-width: 1250px;
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
 }
 
-/* HERO IMAGE RIGHT */
 .hero-image {
   width: 420px;
   height: 520px;
@@ -100,16 +47,16 @@ a:hover {
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-/* HERO TEXT LEFT */
 .hero-text {
   flex: 1;
 }
 
 .hero-title {
-  font-size: 50px;
+  font-size: 48px;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 20px;
+  color: #000;
 }
 
 .hero-subtitle {
@@ -121,7 +68,7 @@ a:hover {
 .hero-button {
   display: inline-block;
   background: #00c8c8;
-  color: white !important;
+  color: #fff !important;
   padding: 14px 28px;
   border-radius: 8px;
   font-size: 18px;
@@ -129,9 +76,11 @@ a:hover {
   text-decoration: none;
 }
 
+
 /* ----------------------------
    PAGE CONTENT
 ----------------------------- */
+
 .page-wrapper {
   max-width: 900px;
   margin: 0 auto;
