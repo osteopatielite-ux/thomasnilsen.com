@@ -179,3 +179,75 @@ a {
     max-width: 260px;
   }
 }
+/* ---------------- BURGER MENU ---------------- */
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger-line {
+  width: 28px;
+  height: 3px;
+  background: #000;
+  border-radius: 4px;
+}
+
+/* Hide desktop menu on mobile */
+.desktop-nav {
+  display: flex;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 850px) {
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+    background: #f7f7f7;
+    border-top: 1px solid #ddd;
+    gap: 14px;
+  }
+
+  .mobile-nav a {
+    font-size: 18px;
+    padding: 6px 0;
+  }
+
+  .mobile-button {
+    background: #00c8c8;
+    color: white !important;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 10px auto 0;
+    display: inline-block;
+    width: 80%;
+  }
+}
+
+/* Tablet menu tweak */
+@media (min-width: 851px) and (max-width: 1024px) {
+  .burger {
+    display: none;
+  }
+  .desktop-nav {
+    gap: 18px;
+  }
+}
