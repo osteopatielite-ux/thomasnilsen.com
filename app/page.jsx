@@ -1,156 +1,107 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <div style={styles.page}>
+    <main style={styles.main}>
 
       {/* HERO */}
       <section style={styles.heroSection}>
-        <div style={styles.heroContainer}>
+        <div style={styles.heroInner}>
 
-          <img
-            src="/portrett.jpg"
-            alt="Thomas Nilsen"
-            style={styles.heroImage}
-          />
+          {/* Venstre tekst */}
+          <div style={styles.heroLeft}>
+            <h1 style={styles.heroTitle}>
+              Smerter, stress eller<br />tankekjør? Jeg hjelper deg<br />videre.
+            </h1>
 
-          <div style={styles.heroTextBlock}>
-            <h1 style={styles.heroTitle}>Smerter, stress eller tankekjør?</h1>
-            <p style={styles.heroSubtitle}>Jeg hjelper deg videre.</p>
+            <p style={styles.heroSubtitle}>
+              Fysioterapi • Osteopati • Kognitiv terapi i Bodø
+            </p>
 
             <a href="mailto:thomas@moveoklinikken.no" style={styles.heroButton}>
               Bestill time
             </a>
           </div>
 
+          {/* Høyre bilde */}
+          <div style={styles.heroRight}>
+            <img
+              src="/portrett.jpg"
+              alt="Thomas Nilsen"
+              style={styles.heroImage}
+            />
+          </div>
+
         </div>
       </section>
-
-      {/* CONTENT */}
-      <div style={styles.content}>
-
-        {/* Velkommen */}
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Velkommen</h2>
-          <p style={styles.sectionText}>
-            Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø.  
-            Jeg tilbyr fysioterapi, osteopati og kognitiv terapi – med fokus på 
-            smerter, stress, overbelastning og individuelt tilpasset behandling.
-          </p>
-        </section>
-
-        {/* Tjenester */}
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Tjenester</h2>
-
-          <ul style={styles.list}>
-            <li style={styles.listItem}>Fysioterapi og manuell behandling</li>
-            <li style={styles.listItem}>Osteopati</li>
-            <li style={styles.listItem}>Kognitiv terapi</li>
-            <li style={styles.listItem}>Løpsanalyse og teknikkvurdering</li>
-            <li style={styles.listItem}>Terskel- og laktattest</li>
-          </ul>
-        </section>
-
-        {/* Kontakt */}
-        <section style={styles.section}>
-          <h2 style={styles.sectionTitle}>Kontakt</h2>
-          <p style={styles.sectionText}>
-            For timeforespørsel eller spørsmål – send e-post:
-          </p>
-
-          <a href="mailto:thomas@moveoklinikken.no" style={styles.mailLink}>
-            thomas@moveoklinikken.no
-          </a>
-        </section>
-
-      </div>
-    </div>
+    </main>
   );
 }
 
 //
-// INLINE STYLES — HOLDER ALT STABILT OG LIKT OVERALT
+// ---------------------------- STYLES ----------------------------
 //
 const styles = {
-  page: {
+  main: {
     fontFamily: "Arial, sans-serif",
     color: "#000",
-    textAlign: "center",
   },
 
-  /* HERO */
   heroSection: {
-    backgroundColor: "#fafafa",
-    padding: "60px 20px",
-    borderBottom: "1px solid #eee",
+    padding: "80px 20px",
+    backgroundColor: "#f7f8fa",
   },
-  heroContainer: {
-    maxWidth: "700px",
+
+  heroInner: {
+    maxWidth: "1200px",
     margin: "0 auto",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: "40px",
   },
-  heroImage: {
-    width: "180px",
-    height: "180px",
-    borderRadius: "50%",
-    objectFit: "cover",
-    marginBottom: "20px",
+
+  /* LEFT SIDE */
+  heroLeft: {
+    flex: 1,
   },
-  heroTextBlock: {},
+
   heroTitle: {
-    fontSize: "32px",
-    fontWeight: "700",
-    marginBottom: "10px",
-  },
-  heroSubtitle: {
-    fontSize: "20px",
-    color: "#333",
+    fontSize: "48px",
+    fontWeight: "800",
+    lineHeight: "1.25",
     marginBottom: "25px",
   },
+
+  heroSubtitle: {
+    fontSize: "18px",
+    color: "#555",
+    marginBottom: "30px",
+  },
+
   heroButton: {
     display: "inline-block",
-    background: "#00c8c8",
-    padding: "12px 22px",
-    borderRadius: "6px",
-    color: "#000",
+    backgroundColor: "#00c8c8",
+    color: "#fff",
+    padding: "14px 28px",
+    borderRadius: "8px",
+    fontSize: "18px",
     fontWeight: "600",
     textDecoration: "none",
-    fontSize: "16px",
   },
 
-  /* CONTENT */
-  content: {
-    maxWidth: "800px",
-    margin: "40px auto",
-    padding: "0 20px",
-    color: "#000",
-  },
-  section: {
-    marginBottom: "50px",
-  },
-  sectionTitle: {
-    fontSize: "26px",
-    fontWeight: "700",
-    marginBottom: "10px",
-  },
-  sectionText: {
-    fontSize: "18px",
-    lineHeight: "1.6",
+  /* RIGHT SIDE */
+  heroRight: {
+    flex: 1,
+    display: "flex",
+    justifyContent: "center",
   },
 
-  /* LIST */
-  list: {
-    listStyle: "none",
-    padding: 0,
-    margin: 0,
-    fontSize: "18px",
-  },
-  listItem: {
-    padding: "8px 0",
-  },
-
-  mailLink: {
-    fontSize: "18px",
-    color: "#000",
-    fontWeight: "600",
-    textDecoration: "none",
+  heroImage: {
+    width: "420px",
+    height: "520px",
+    objectFit: "cover",
+    borderRadius: "16px",
+    boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
   },
 };
