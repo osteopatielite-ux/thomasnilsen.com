@@ -1,68 +1,36 @@
-import Link from "next/link";
+import "./globals.css";
 
-export default function Home() {
+export const metadata = {
+  title: "Thomas Nilsen – Fysioterapi • Osteopati • Kognitiv terapi",
+  description: "Smerter, stress eller tankekjør? Jeg hjelper deg videre.",
+};
+
+export default function RootLayout({ children }) {
   return (
-    <div>
+    <html lang="no">
+      <body>
 
-      {/* HERO */}
-      <section className="hero-section">
-        <div className="hero-wrapper">
-          <img
-            src="/portrett.jpg"
-            alt="Thomas Nilsen"
-            className="hero-image"
-          />
+        {/* HEADER */}
+        <header className="header">
+          <div className="header-inner">
+            <div className="header-left">
+              <img src="/moveo-logo.png" className="header-logo" alt="Moveo" />
+              <span className="header-name">Thomas Nilsen</span>
+            </div>
 
-          <div className="hero-text">
-            <h1 className="hero-title">Smerter, stress eller tankekjør?</h1>
-            <p className="hero-subtitle">Jeg hjelper deg videre.</p>
-
-            <a href="mailto:thomas@moveoklinikken.no" className="hero-button">
-              Bestill time
-            </a>
+            <nav className="nav">
+              <a href="/">Hjem</a>
+              <a href="/om-meg">Om meg</a>
+              <a href="/kontakt">Kontakt</a>
+              <a className="header-button" href="mailto:thomas@moveoklinikken.no">
+                Bestill time
+              </a>
+            </nav>
           </div>
-        </div>
-      </section>
+        </header>
 
-      {/* MAIN CONTENT */}
-      <div className="page-wrapper">
-
-        {/* INTRO */}
-        <section className="section">
-          <h2 className="section-title">Velkommen</h2>
-          <p className="section-text">
-            Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø.
-            Jeg tilbyr fysioterapi, osteopati og kognitiv terapi – med fokus på
-            smerter, stress, overbelastning og individuelt tilpasset behandling.
-          </p>
-        </section>
-
-        {/* TJENESTER */}
-        <section className="section">
-          <h2 className="section-title">Tjenester</h2>
-
-          <ul className="service-list">
-            <li><Link href="/fysioterapi">Fysioterapi og manuell behandling</Link></li>
-            <li><Link href="/osteopati">Osteopati</Link></li>
-            <li><Link href="/kognitiv-terapi">Kognitiv terapi</Link></li>
-            <li><Link href="/lopsanalyse">Løpsanalyse og teknikkvurdering</Link></li>
-            <li><Link href="/terskeltest">Terskel- og laktattest</Link></li>
-          </ul>
-        </section>
-
-        {/* KONTAKT */}
-        <section className="section">
-          <h2 className="section-title">Kontakt</h2>
-          <p className="section-text">
-            For timeforespørsel eller spørsmål – send e-post til:
-          </p>
-
-          <a className="contact-email" href="mailto:thomas@moveoklinikken.no">
-            thomas@moveoklinikken.no
-          </a>
-        </section>
-
-      </div>
-    </div>
+        {children}
+      </body>
+    </html>
   );
 }
