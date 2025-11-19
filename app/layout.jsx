@@ -1,15 +1,13 @@
-"use client";
-import { useState } from "react";
-import "./globals.css";
+
+import './globals.css';
+import Link from "next/link";
 
 export const metadata = {
-  title: "Thomas Nilsen – Moveoklinikken i Bodø",
-  description: "Fysioterapi, osteopati og kognitiv terapi.",
+  title: "Thomas Nilsen – Moveo",
+  description: "Fysioterapi, osteopati og kognitiv terapi i Bodø.",
 };
 
 export default function RootLayout({ children }) {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <html lang="no">
       <body>
@@ -18,47 +16,29 @@ export default function RootLayout({ children }) {
         <header className="header">
           <div className="header-inner">
 
-            {/* Logo + navn */}
+            {/* LOGO + NAVN */}
             <div className="header-left">
-              <img src="/moveo-logo.png" alt="Moveoklinikken" className="header-logo" />
+              <img src="/moveo-logo.png" alt="Moveo" className="logo" />
               <span className="header-name">Thomas Nilsen</span>
             </div>
 
-            {/* Burger icon – mobil */}
-            <div
-              className="burger"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              <div className="burger-line"></div>
-              <div className="burger-line"></div>
-              <div className="burger-line"></div>
-            </div>
+            {/* MENY */}
+            <nav className="nav">
+              <Link href="/">Hjem</Link>
+              <Link href="/om-meg">Om meg</Link>
+              <Link href="/kontakt">Kontakt</Link>
 
-            {/* DESKTOP MENU */}
-            <nav className="nav desktop-nav">
-              <a href="/">Hjem</a>
-              <a href="/om-meg">Om meg</a>
-              <a href="/kontakt">Kontakt</a>
-              <a className="header-button" href="mailto:thomas@moveoklinikken.no">
+              <a href="mailto:thomas@moveoklinikken.no" className="header-button">
                 Bestill time
               </a>
             </nav>
+
           </div>
-
-          {/* MOBILE MENU (only visible when open) */}
-          {menuOpen && (
-            <nav className="mobile-nav">
-              <a href="/">Hjem</a>
-              <a href="/om-meg">Om meg</a>
-              <a href="/kontakt">Kontakt</a>
-              <a className="mobile-button" href="mailto:thomas@moveoklinikken.no">
-                Bestill time
-              </a>
-            </nav>
-          )}
         </header>
 
+        {/* CONTENT */}
         <main>{children}</main>
+
       </body>
     </html>
   );
