@@ -6,12 +6,12 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero-section">
-        <div className="hero-inner">
+        <div className="hero-wrapper">
 
-          {/* VENSTRE – TEKST */}
-          <div className="hero-left">
+          {/* Venstre tekst */}
+          <div className="hero-text">
             <h1 className="hero-title">
-              Smerter, stress eller<br />tankekjør? Jeg hjelper deg<br />videre.
+              Smerter, stress eller tankekjør? Jeg hjelper deg videre.
             </h1>
 
             <p className="hero-subtitle">
@@ -23,8 +23,8 @@ export default function Home() {
             </a>
           </div>
 
-          {/* HØYRE – BILDE */}
-          <div className="hero-right">
+          {/* Høyre bilde */}
+          <div className="hero-image-container">
             <img
               src="/portrett.jpg"
               alt="Thomas Nilsen"
@@ -35,14 +35,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* HOVEDINNHOLD */}
+      {/* MAIN CONTENT */}
       <div className="page-wrapper">
 
         {/* INTRO */}
         <section className="section">
           <h2 className="section-title">Velkommen</h2>
           <p className="section-text">
-            Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø.  
+            Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø.
             Jeg tilbyr fysioterapi, osteopati og kognitiv terapi – med fokus på
             smerter, stress, overbelastning og individuelt tilpasset behandling.
           </p>
