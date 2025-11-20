@@ -8,7 +8,6 @@ export default function Home() {
       <section className="hero-section">
         <div className="hero-wrapper">
 
-          {/* Venstre tekst */}
           <div className="hero-text">
             <h1 className="hero-title">
               Smerter, stress eller tankekjør? Jeg hjelper deg videre.
@@ -23,7 +22,6 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Høyre bilde */}
           <div className="hero-image-container">
             <img
               src="/portrett.jpg"
