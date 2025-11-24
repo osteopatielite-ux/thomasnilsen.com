@@ -1,62 +1,90 @@
+export const metadata = {
+  title: "Fysioterapi i Bodø – Moveoklinikken | Thomas Nilsen",
+  description:
+    "Profesjonell fysioterapi i Bodø. Undersøkelse, behandling og veiledning basert på bevegelse, funksjon og vitenskapelig tilnærming.",
+};
+
 export default function Fysioterapi() {
   return (
-    <div className="section">
+    <div>
 
-      <h1 className="section-title">Fysioterapi</h1>
+      {/* HERO */}
+      <section className="sub-hero">
+        <div className="sub-hero-content">
+          <h1>Fysioterapi i Bodø</h1>
+          <p>Trygg, faglig sterk og individuell oppfølging</p>
+        </div>
+      </section>
 
-      <p className="section-text">
-        Fysioterapi er en sentral del av moderne skolemedisin og bygger på
-        vitenskapelig kunnskap innen anatomi, fysiologi, nevrologi og biomekanikk.
-        Fysioterapeuter jobber med kropp, bevegelse og funksjon – og målet er alltid
-        å hjelpe deg til mindre smerte og bedre mestring i hverdagen.
-      </p>
+      <div className="page-wrapper">
 
-      <h2 className="section-title">Hva gjør en fysioterapeut?</h2>
-      <p className="section-text">
-        En fysioterapeut forebygger og behandler skader og sykdommer som gir smerte
-        eller nedsatt funksjon i muskel- og skjelettsystemet. Behandlingen bygger på
-        grundig undersøkelse, vurdering og en felles plan ut fra hva du ønsker hjelp med.
-      </p>
+        {/* INTRO */}
+        <section className="section">
+          <h2 className="section-title">Hva er fysioterapi?</h2>
+          <p className="section-text">
+            Fysioterapi er en sentral del av moderne medisin – fundert på
+            anatomi, fysiologi, nevrologi og bevegelsesvitenskap. Målet er å
+            hjelpe kroppen tilbake til normal funksjon gjennom undersøkelse,
+            veiledet trening og manuelle teknikker.
+          </p>
+        </section>
 
-      <p className="section-text">
-        Målet er at du skal utvikle, gjenvinne eller vedlikeholde funksjonsevne, utnytte
-        egne ressurser og bli mer aktiv i å påvirke egen helse. Fysioterapeuten har
-        spesialkompetanse på både akutte og langvarige plager i muskler og ledd.
-      </p>
+        {/* BLOCK SECTION */}
+        <section className="info-block">
+          <h3 className="info-title">Hva gjør en fysioterapeut?</h3>
+          <p>
+            En fysioterapeut forebygger og behandler plager som gir smerte eller
+            nedsatt funksjon i muskler, ledd og nervesystem. Behandlingen starter
+            alltid med en grundig samtale og funksjonsundersøkelse slik at du
+            forstår hvorfor plagene oppstår – og hvordan vi løser dem.
+          </p>
+          <p>
+            Fokus ligger på riktige bevegelser, progresjon og å gi deg trygghet
+            i egen kropp. Vi vet at langsiktige resultater kommer når du forstår
+            hvordan du skal håndtere hverdagen, stress og belastning.
+          </p>
+        </section>
 
-      <h2 className="section-title">En aktiv tilnærming gir best resultater</h2>
-      <p className="section-text">
-        For både akutte og langvarige smerter er riktig trening og veiledning avgjørende
-        for varige resultater. Passiv behandling alene har ofte liten dokumentert effekt.
-        Hos Moveo legger vi derfor stor vekt på en aktiv, trygg og målrettet tilnærming.
-      </p>
+        {/* BLOCK SECTION */}
+        <section className="info-block">
+          <h3 className="info-title">Hva behandler vi?</h3>
+          <ul className="clean-list">
+            <li>Rygg- og nakkesmerter</li>
+            <li>Skulder-, hofte- og kneplager</li>
+            <li>Betennelser og overbelastning</li>
+            <li>Idrettsskader</li>
+            <li>Kreftrelaterte plager – trening under/etter behandling</li>
+            <li>KOLS og hjertesykdom</li>
+            <li>Rehabilitering etter operasjoner</li>
+            <li>Artrose og stivhet</li>
+          </ul>
+        </section>
 
-      <p className="section-text">
-        Vi hjelper deg å bruke kroppen riktig, gir konkrete råd og tilpasset opptrening,
-        og gjør deg trygg på hva du kan gjøre selv for å få bedre funksjon – ikke bare
-        nå, men også på lang sikt.
-      </p>
+        {/* BLOCK SECTION */}
+        <section className="info-block">
+          <h3 className="info-title">Vår tilnærming</h3>
+          <p>
+            Hos Moveoklinikken jobber vi med en aktiv tilnærming: riktig
+            belastning, styrke, kontroll og trygghet er nøkkelen til varig
+            bedring. Passiv behandling brukes kun når det gir mening som del av
+            en større plan.
+          </p>
+        </section>
 
-      <h2 className="section-title">Hva kan vi behandle?</h2>
+        {/* CONTACT */}
+        <section className="section">
+          <h2 className="section-title">Bestill time</h2>
+          <p className="section-text">
+            Har du smerter eller er usikker på hva som skjer i kroppen?
+            Send meg en e-post, så finner vi en løsning.
+          </p>
 
-      <ul className="service-list">
-        <li>Generelle muskel- og skjelettplager</li>
-        <li>Nakke-, skulder- og ryggsmerter</li>
-        <li>Betennelser og overbelastningsskader</li>
-        <li>Idrettsskader</li>
-        <li>Rehabilitering etter operasjoner eller sykdom</li>
-        <li>Artrose</li>
-        <li>KOLS og hjertesykdom</li>
-        <li>Kreft – tilrettelagt trening under og etter behandling</li>
-      </ul>
+          <a href="mailto:thomas@moveoklinikken.no" className="hero-button">
+            Bestill time
+          </a>
+        </section>
 
-      <h2 className="section-title">Målet med fysioterapi</h2>
-      <p className="section-text">
-        Målet er å skape positive endringsprosesser og gi deg trygghet, kontroll og
-        bedre funksjon. Vår filosofi er at du som pasient er den viktigste faktoren 
-        i egen helse – og sammen finner vi veien videre.
-      </p>
-
+      </div>
     </div>
   );
 }
