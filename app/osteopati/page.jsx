@@ -1,70 +1,119 @@
-export default function Osteopati() {
+export const metadata = {
+  title: "Osteopati i Bodø | Moveo Klinikken",
+  description:
+    "Osteopati i Bodø med helhetlig behandling av muskel- og skjelettplager. Veiledning, manuelle teknikker og moderne smerteforståelse.",
+};
+
+export default function OsteopatiPage() {
   return (
-    <div className="section">
+    <main style={styles.page}>
+      {/* HERO */}
+      <section style={styles.hero}>
+        <h1 style={styles.heroTitle}>Osteopati i Bodø</h1>
+        <p style={styles.heroSubtitle}>
+          Helhetlig behandling som kombinerer anatomi, fysiologi og moderne
+          smerteforståelse.
+        </p>
+      </section>
 
-      <h1 className="section-title">Osteopati</h1>
+      {/* CONTENT */}
+      <section style={styles.container}>
+        <h2 style={styles.heading}>Hva er osteopati?</h2>
+        <p style={styles.text}>
+          Osteopati er en moderne, vitenskapsbasert tilnærming som undersøker
+          sammenhengen mellom muskler, ledd, bindevev, nervesystem og sirkulasjon.
+          Målet er å finne årsaken til plagene – ikke bare behandle symptomene.
+        </p>
 
-      <p className="section-text">
-        Osteopati handler om å se hele mennesket – ikke bare smerten. Målet er å forstå 
-        hvordan dine plager henger sammen med kroppen din, måten du beveger deg på, 
-        hverdagen din, og de belastningene du står i.
-      </p>
+        <h2 style={styles.heading}>Hvordan jobber en osteopat?</h2>
+        <p style={styles.text}>
+          Behandlingen starter med en grundig samtale og funksjonsundersøkelse.
+          Osteopaten vurderer bevegelse, respirasjon, holdning og belastning for
+          å se hvordan kroppen løser oppgavene sine – og hva som skaper smerte.
+        </p>
 
-      <p className="section-text">
-        Vi jobber sammen for å finne sammenhengen. Det første håndtrykket, den individuelle 
-        vurderingen, og rådene du tar med deg videre – alt dette er med på å skape trygghet, 
-        forutsigbarhet og mestring. Når du går en tur i skogen og kjenner at kroppen fungerer, 
-        er det osteopati i praksis.
-      </p>
+        <h2 style={styles.heading}>Vanlige plager jeg behandler</h2>
+        <ul style={styles.list}>
+          <li>Spenningshodepine og migrene</li>
+          <li>Nakke- og ryggsmerter</li>
+          <li>Skulder- og armplager</li>
+          <li>Bekkenplager og smerter i korsrygg</li>
+          <li>Pustevansker, stress og muskulære spenninger</li>
+          <li>Fordøyelsesrelaterte plager (ikke sykdom, men funksjonelle problem)</li>
+          <li>Plager etter fall, traume eller overbelastning</li>
+        </ul>
 
-      <h2 className="section-title">Hva gjør en osteopat?</h2>
-      <p className="section-text">
-        En osteopat har inngående kunnskap om hvordan kroppen fungerer – både lokalt og i 
-        samspill. Vi skreddersyr alltid behandlingen din ut fra dine mål og behov. En viktig 
-        del av behandlingen er å gi deg verktøy til å håndtere plagene dine selv i hverdagen. 
-        Perioder med smerter vil alltid kunne komme, men lærer du hvordan du håndterer dem, 
-        blir de kortere og mindre plagsomme.
-      </p>
-
-      <h2 className="section-title">God tid skaper forståelse</h2>
-      <p className="section-text">
-        Mange opplever bedret livskvalitet etter osteopatibehandling. Det er fordi en 
-        behandlingstime alltid er individuelt tilpasset deg. Vi tar oss god tid til å lytte, 
-        stille spørsmål og gjennomføre grundige undersøkelser.
-      </p>
-
-      <p className="section-text">
-        En typisk time består av en samtale, ulike funksjonstester og manuelle undersøkelser 
-        hvor vi bruker hendene som et viktig verktøy. Vi bruker alltid tid på å forklare hva 
-        vi gjør og hvorfor.
-      </p>
-
-      <h2 className="section-title">Behandlingsteknikker</h2>
-      <p className="section-text">
-        Behandlingen kan bestå av et bredt spekter av manuelle teknikker – fra lette, rolige 
-        teknikker til mer kraftfulle mobiliseringer når det er nødvendig. Eksempler er:
-      </p>
-
-      <ul className="service-list">
-        <li>Manipulasjonsteknikker (knekking)</li>
-        <li>Leddmobilisering</li>
-        <li>Muskulære teknikker</li>
-        <li>Tøyninger</li>
-        <li>Avspenning og stressregulering</li>
-      </ul>
-
-      <p className="section-text">
-        Teknikker er bare en del av behandlingen. Like viktig er øvelser, bevegelse og 
-        håndtering av stress i hverdagen. God behandling er en dialog – der vi jobber sammen 
-        for at du skal bruke kroppen på en trygg, sterk og sunn måte.
-      </p>
-
-      <h2 className="section-title">Målet med osteopati</h2>
-      <p className="section-text">
-        Målet er alltid det samme: at du skal forstå kroppen din bedre, føle deg tryggere, 
-        og oppleve at du har mer kontroll – både på smerten og på bevegelsen din.
-      </p>
-
-    </div>
+        <a href="mailto:thomas@moveoklinikken.no" style={styles.button}>
+          Bestill time
+        </a>
+      </section>
+    </main>
   );
 }
+
+/* -------------------- STYLES -------------------- */
+
+const styles = {
+  page: {
+    fontFamily: "Arial, sans-serif",
+    color: "#111",
+  },
+
+  hero: {
+    padding: "90px 20px 60px",
+    textAlign: "center",
+    background: "#f7f8fa",
+  },
+
+  heroTitle: {
+    fontSize: "48px",
+    fontWeight: "800",
+    marginBottom: "15px",
+  },
+
+  heroSubtitle: {
+    fontSize: "20px",
+    color: "#555",
+    maxWidth: "650px",
+    margin: "0 auto",
+  },
+
+  container: {
+    maxWidth: "900px",
+    margin: "0 auto",
+    padding: "60px 20px",
+    textAlign: "center",
+  },
+
+  heading: {
+    fontSize: "32px",
+    margin: "40px 0 15px",
+    fontWeight: "700",
+  },
+
+  text: {
+    fontSize: "18px",
+    lineHeight: "1.7",
+    marginBottom: "30px",
+  },
+
+  list: {
+    listStyle: "none",
+    padding: 0,
+    marginBottom: "40px",
+    fontSize: "18px",
+    lineHeight: "1.9",
+  },
+
+  button: {
+    display: "inline-block",
+    backgroundColor: "#00c8c8",
+    color: "#fff",
+    padding: "14px 28px",
+    borderRadius: "8px",
+    fontSize: "18px",
+    fontWeight: "600",
+    textDecoration: "none",
+    marginTop: "20px",
+  },
+};
