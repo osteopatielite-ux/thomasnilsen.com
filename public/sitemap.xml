@@ -1,32 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- Hovedside -->
   <url>
     <loc>https://thomasnilsen.com/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>1.0</priority>
   </url>
 
+  <!-- Om meg -->
   <url>
-    <loc>https://thomasnilsen.com/fysioterapi</loc>
+    <loc>https://thomasnilsen.com/om-meg</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://thomasnilsen.com/osteopati</loc>
-  </url>
-
-  <url>
-    <loc>https://thomasnilsen.com/kognitiv-terapi</loc>
-  </url>
-
-  <url>
-    <loc>https://thomasnilsen.com/lopsanalyse</loc>
-  </url>
-
-  <url>
-    <loc>https://thomasnilsen.com/terskeltest</loc>
-  </url>
-
+  <!-- Kontakt -->
   <url>
     <loc>https://thomasnilsen.com/kontakt</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Fysioterapi -->
+  <url>
+    <loc>https://thomasnilsen.com/fysioterapi</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Osteopati -->
+  <url>
+    <loc>https://thomasnilsen.com/osteopati</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Kognitiv Terapi -->
+  <url>
+    <loc>https://thomasnilsen.com/kognitiv-terapi</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Løpsanalyse -->
+  <url>
+    <loc>https://thomasnilsen.com/lopsanalyse</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Terskeltest -->
+  <url>
+    <loc>https://thomasnilsen.com/terskeltest</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
