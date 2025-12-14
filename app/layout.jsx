@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata = {
   title: "Thomas Nilsen – Fysioterapi, Osteopati & Kognitiv Terapi i Bodø",
   description:
-    "Behandling innen fysioterapi, osteopati, kognitiv terapi, løpsanalyse og terskeltest. Moveoklinikken Bodø – med fokus på smerte, stress og mestring.",
+    "Behandling innen fysioterapi, osteopati, kognitiv terapi, løpsanalyse og terskeltest. Moveoklinikken Bodø – fokus på smerte, stress, bevegelse og mestring.",
 };
 
 export default function RootLayout({ children }) {
@@ -12,13 +12,13 @@ export default function RootLayout({ children }) {
     <html lang="no">
       <body>
 
-        {/* ---------------- HEADER ---------------- */}
+        {/* ================= HEADER ================= */}
         <header className="header">
           <div className="header-inner">
 
             {/* Logo + navn */}
             <div className="header-left">
-              <img src="/moveo-logo.png" alt="Moveoklinikken Logo" className="header-logo" />
+              <img src="/moveo-logo.png" alt="Moveoklinikken" className="header-logo" />
 
               <div className="header-text">
                 <div className="header-name">Thomas Nilsen</div>
@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
               <Link href="/kontakt">Kontakt</Link>
             </nav>
 
-            {/* Book time */}
+            {/* Bestill time knapp */}
             <a href="mailto:thomas@moveoklinikken.no" className="header-button">
               Bestill time
             </a>
@@ -48,21 +48,23 @@ export default function RootLayout({ children }) {
           </div>
         </header>
 
-        {/* ---------------- CONTENT ---------------- */}
+        {/* ================= MAIN CONTENT ================= */}
         <main>{children}</main>
 
-        {/* ---------------- FOOTER ---------------- */}
+        {/* ================= FOOTER ================= */}
         <footer className="footer">
           <div className="footer-inner">
 
+            {/* Footer kolonne 1 */}
             <div className="footer-col">
-              <img src="/moveo-logo.png" className="footer-logo" alt="Moveoklinikken logo" />
+              <img src="/moveo-logo.png" className="footer-logo" alt="Logo" />
               <div className="footer-name">Thomas Nilsen</div>
               <div className="footer-role">
                 Fysioterapeut • Osteopat • Kognitiv terapeut
               </div>
             </div>
 
+            {/* Footer kolonne 2 */}
             <div className="footer-col">
               <h4>Behandling</h4>
               <Link href="/fysioterapi">Fysioterapi</Link>
@@ -73,6 +75,7 @@ export default function RootLayout({ children }) {
               <Link href="/podcast">Podcast</Link>
             </div>
 
+            {/* Footer kolonne 3 */}
             <div className="footer-col">
               <h4>Kontakt</h4>
               <a href="mailto:thomas@moveoklinikken.no">E-post</a>
@@ -95,3 +98,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
