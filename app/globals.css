@@ -1,4 +1,6 @@
-/* ---------------- GLOBAL RESET ---------------- */
+/* =========================================
+   GLOBAL RESET & BASE
+========================================= */
 
 * {
   margin: 0;
@@ -6,51 +8,38 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+html, body {
   background: #ffffff;
   color: #111;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  loading: lazy;
-}
-
-/* Gjør alle lenker svarte som standard */
-a {
-  color: #000;
-  text-decoration: none;
-}
-
-/* ---------------- LAYOUT ---------------- */
-
+/* Maks bredde for vanlig innhold */
 .page-wrapper {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
-/* ---------------- HEADER ---------------- */
+
+
+/* =========================================
+   HEADER
+========================================= */
 
 .header {
   width: 100%;
-  background: white;
+  background: #ffffff;
   border-bottom: 1px solid #e5e5e5;
-  padding: 15px 0;
+  padding: 16px 0;
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 100;
 }
 
 .header-inner {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -63,17 +52,31 @@ a {
 .header-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .header-logo {
-  height: 40px;
+  height: 42px;
+  width: auto;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
 }
 
 .header-name {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
 }
+
+.header-role {
+  font-size: 13px;
+  color: #555;
+}
+
+/* Navigation links */
 
 .nav {
   display: flex;
@@ -84,67 +87,50 @@ a {
   text-decoration: none;
   color: #000;
   font-weight: 500;
+  transition: opacity 0.2s;
 }
+
+.nav a:hover {
+  opacity: 0.6;
+}
+
+/* Bestill time button */
 
 .header-button {
   background: #00c8c8;
   padding: 10px 18px;
   border-radius: 6px;
-  color: #000;
+  color: #fff;
   font-weight: 600;
   text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
 }
 
-/* ---------------- HERO ---------------- */
+.header-button:hover {
+  background: #009d9d;
+}
+
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
 
 .hero-section {
-  padding: 80px 20px;
+  width: 100%;
   background: #f7f8fa;
+  padding: 80px 20px;
 }
 
 .hero-wrapper {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-}
-
-.hero-text {
-  flex: 1;
-}
-
-.hero-title {
-  font-size: 42px;
-  font-weight: 800;
-  line-height: 1.3;
-  margin-bottom: 20px;
-  color: #000;
-}
-
-.hero-subtitle {
-  font-size: 18px;
-  color: #444;
-  margin-bottom: 30px;
-}
-
-.hero-button {
-  display: inline-block;
-  background: #00c8c8;
-  padding: 14px 28px;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.hero-image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
 }
 
 .hero-image {
@@ -155,110 +141,93 @@ a {
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-/* ---------------- TJENESTER KORT ---------------- */
+.hero-text {
+  flex: 1;
+}
 
-.services-section {
-  padding: 40px 20px 60px;
-  background: #ffffff;
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.hero-button {
+  display: inline-block;
+  background: #00c8c8;
+  padding: 14px 26px;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.hero-button:hover {
+  background: #009c9c;
+}
+
+
+
+/* =========================================
+   GENERELLE SEKSJONER
+========================================= */
+
+.section {
+  margin-bottom: 60px;
 }
 
 .section-title {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.section-title-center {
-  text-align: center;
-}
-
 .section-text {
   font-size: 18px;
   color: #333;
-  margin-bottom: 20px;
 }
 
-.section-text-center {
-  text-align: center;
-  max-width: 650px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.services-grid {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
-}
-
-.service-card {
-  background: #fafafa;
-  border-radius: 12px;
-  border: 1px solid #e2e2e2;
-  padding: 20px;
-  text-align: left;
-  transition: transform 0.15s ease, box-shadow 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.service-card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-.service-card p {
-  font-size: 16px;
-  color: #444;
-  margin-bottom: 12px;
-}
-
-.service-tag {
-  font-size: 14px;
-  font-weight: 600;
-  color: #00a0a0;
-}
-
-/* Hover-effekt */
-.service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-  border-color: #00c8c8;
-}
-
-/* ---------------- SECTIONS (VELKOMMEN/KONTAKT) ---------------- */
-
-.section {
-  margin-top: 60px;
-}
-
-.section-text {
+/* Tjenester-listen */
+.service-list {
+  margin-top: 10px;
+  padding-left: 20px;
   font-size: 18px;
-  color: #333;
-  margin-bottom: 20px;
 }
 
-/* ---------------- CONTACT ---------------- */
+.service-list li {
+  margin-bottom: 8px;
+}
 
 .contact-email {
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #00c8c8;
   text-decoration: none;
 }
 
-/* ---------------- FOOTER ---------------- */
+
+
+/* =========================================
+   FOOTER
+========================================= */
 
 .footer {
   background: #f5f5f5;
-  padding: 50px 0 25px;
-  margin-top: 60px;
+  padding: 60px 0 30px;
   border-top: 1px solid #ddd;
+  margin-top: 80px;
 }
 
 .footer-inner {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -284,95 +253,79 @@ a {
 .footer-role {
   font-size: 14px;
   color: #444;
+  margin-top: 4px;
 }
 
 .footer-col h4 {
   font-size: 16px;
-  margin-bottom: 10px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .footer-col a {
-  color: #000;
-  text-decoration: none;
   display: block;
+  color: #000;
   margin-bottom: 6px;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
   color: #555;
   font-size: 14px;
 }
 
-/* ---------------- MOBILE ---------------- */
 
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+/* Tablet */
 @media (max-width: 900px) {
+  .nav {
+    display: none; /* Mobilmeny kan lages senere */
+  }
+
   .hero-wrapper {
     flex-direction: column;
     text-align: center;
   }
 
   .hero-image {
-    width: 320px;
-    height: 420px;
+    width: 300px;
+    height: 380px;
+  }
+}
+
+/* Mobil */
+@media (max-width: 600px) {
+
+  .header {
+    padding: 10px 0;
   }
 
-  .header-inner {
-    flex-direction: column;
-    gap: 12px;
+  .header-logo {
+    height: 34px;
   }
 
-  .nav {
-    gap: 14px;
-    flex-wrap: wrap;
-    justify-content: center;
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-image {
+    width: 260px;
+    height: 340px;
+  }
+
+  .page-wrapper {
+    padding: 30px 16px;
   }
 
   .footer-inner {
     flex-direction: column;
-    text-align: center;
+    gap: 25px;
   }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/* ---------------- PODCAST LAYOUT ---------------- */
-
-.page-title {
-  text-align: center;
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 25px;
-}
-
-.page-intro {
-  text-align: center;
-  font-size: 18px;
-  max-width: 700px;
-  margin: 0 auto 40px;
-  color: #444;
-}
-
-.video-grid {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.video-card iframe {
-  width: 100%;
-  max-width: 800px;
-  height: 450px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.video-note {
-  text-align: center;
-  font-size: 16px;
-  margin-top: 20px;
-  color: #666;
 }
