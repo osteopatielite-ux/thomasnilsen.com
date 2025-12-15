@@ -18,7 +18,6 @@ export default function Home() {
             <h1 className="hero-title">
               Smerter, stress eller tankekjør?
             </h1>
-
             <p className="hero-subtitle">
               Jeg hjelper deg videre.
             </p>
@@ -30,7 +29,6 @@ export default function Home() {
               Bestill time
             </a>
           </div>
-
         </div>
       </section>
 
@@ -83,7 +81,6 @@ export default function Home() {
             </Link>
           </div>
         </section>
-
       </div>
 
       {/* ================= PODCAST ================= */}
@@ -93,18 +90,21 @@ export default function Home() {
           <h2 className="podcast-title">Podcast & faglige samtaler</h2>
 
           <p className="podcast-intro">
-            Samtaler og refleksjoner rundt smerter, stress, helse,
-            prestasjon og mestring – sett fra et helhetlig perspektiv.
+            Her deler jeg refleksjoner og samtaler om smerter, stress, helse,
+            trening og mental mestring – sett fra et helhetlig perspektiv.
           </p>
 
-          <div className="podcast-video">
+          <div className="podcast-card">
             <iframe
               src="https://www.youtube.com/embed?listType=user_uploads&list=Moveoklinikken"
               title="Moveoklinikken Podcast"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           </div>
+
+          <a href="/podcast" className="podcast-link">
+            Se alle episoder →
+          </a>
 
         </div>
       </section>
