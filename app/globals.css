@@ -1,5 +1,4 @@
-/* ================= RESET ================= */
-
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -13,99 +12,37 @@ html, body {
   line-height: 1.6;
 }
 
+/* LENKER */
 a {
   color: #111;
   text-decoration: none;
 }
 
-/* ================= GENERELLE CONTAINERE ================= */
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.page-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
+/* HERO */
+.hero {
   padding: 40px 20px;
-}
-
-/* ================= HEADER ================= */
-
-.header {
-  width: 100%;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 14px 20px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Mobil: logo + navn midtstilt */
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.header-logo {
-  height: 36px;
-}
-
-.header-name {
-  font-weight: 700;
-  font-size: 16px;
-}
-
-/* Skjul meny/CTA på mobil (ryddig) */
-.header-nav,
-.header-cta {
-  display: none;
-}
-
-/* ================= HERO ================= */
-
-.hero-section {
-  background: #f7f8fa;
-  padding: 50px 20px;
-}
-
-.hero-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: #f5f6f8;
   text-align: center;
-  gap: 30px;
 }
 
 .hero-image {
-  width: 280px;
-  height: 360px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin: 0 auto 20px;
+  display: block;
 }
 
 .hero-title {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 800;
+  margin-bottom: 10px;
 }
 
 .hero-subtitle {
   font-size: 18px;
-  color: #333;
+  margin-bottom: 20px;
 }
 
 .hero-button {
@@ -117,145 +54,51 @@ a {
   font-weight: 600;
 }
 
-/* ================= SEKSJONER ================= */
+/* CONTENT */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
 
-.section {
-  margin-bottom: 60px;
+.content section {
+  margin-bottom: 50px;
   text-align: center;
 }
 
-.section-title {
-  font-size: 28px;
-  font-weight: 700;
+.content h2 {
+  font-size: 26px;
   margin-bottom: 14px;
 }
 
-.section-text {
+.content p {
   font-size: 17px;
-  color: #333;
 }
 
-/* ================= TJENESTER ================= */
-
-.service-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
+/* SERVICES */
+.services {
+  list-style: none;
+  margin-top: 20px;
 }
 
-.service-card {
-  background: #f7f7f7;
-  border: 1px solid #e3e3e3;
-  padding: 22px;
-  border-radius: 12px;
-}
-
-.service-card h3 {
+.services li {
+  margin-bottom: 10px;
   font-size: 18px;
-  margin-bottom: 6px;
 }
 
-.service-card p {
-  font-size: 15px;
-  color: #444;
-}
-
-/* ================= PODCAST ================= */
-
-.podcast-section {
-  background: #f7f8fa;
-  padding: 60px 20px;
-}
-
-.podcast-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.podcast-title {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.podcast-intro {
-  font-size: 17px;
-  color: #444;
-  margin-bottom: 30px;
-}
-
-.podcast-video {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  position: relative;
-}
-
-.podcast-video iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 14px;
-  border: 0;
-}
-
-/* ================= FOOTER ================= */
-
-.footer {
-  background: #f5f5f5;
-  border-top: 1px solid #ddd;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 30px 20px;
-  text-align: center;
-}
-
-.footer-inner p {
-  font-size: 14px;
-  color: #555;
-}
-
-/* ================= DESKTOP (FRA 900px) ================= */
-
+/* DESKTOP */
 @media (min-width: 900px) {
 
-  /* Header */
-  .header-nav {
-    display: flex;
-    gap: 20px;
-  }
-
-  .header-cta {
-    display: inline-block;
-    background: #00c8c8;
-    color: #fff;
-    padding: 10px 18px;
-    border-radius: 6px;
-    font-weight: 600;
-  }
-
-  /* Hero */
-  .hero-wrapper {
-    flex-direction: row;
-    text-align: left;
-    justify-content: space-between;
+  .hero-title {
+    font-size: 42px;
   }
 
   .hero-image {
-    width: 420px;
-    height: 520px;
+    max-width: 420px;
   }
 
-  .hero-title {
-    font-size: 48px;
-  }
-
-  /* Tjenester */
-  .service-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .content h2 {
+    font-size: 32px;
   }
 }
+
