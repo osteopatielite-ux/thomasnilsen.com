@@ -83,32 +83,25 @@ export default function Home() {
         </section>
       </div>
 
-      {/* ================= PODCAST ================= */}
-      <section className="podcast-section">
-        <div className="podcast-inner">
+     {/* ================= PODCAST ================= */}
+<section className="podcast-section">
+  <div className="podcast-inner">
 
-          <h2 className="podcast-title">Podcast & faglige samtaler</h2>
+    <h2 className="podcast-title">Podcast & faglige samtaler</h2>
 
-          <p className="podcast-intro">
-            Her deler jeg refleksjoner og samtaler om smerter, stress, helse,
-            trening og mental mestring – sett fra et helhetlig perspektiv.
-          </p>
+    <p className="podcast-intro">
+      Her deler jeg samtaler og refleksjoner rundt smerter, stress,
+      helse og mestring.
+    </p>
 
-          <div className="podcast-card">
-            <iframe
-              src="https://www.youtube.com/embed?listType=user_uploads&list=Moveoklinikken"
-              title="Moveoklinikken Podcast"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          <a href="/podcast" className="podcast-link">
-            Se alle episoder →
-          </a>
-
-        </div>
-      </section>
-
+    <div className="podcast-video">
+      <iframe
+        src="https://www.youtube.com/embed?listType=user_uploads&list=Moveoklinikken"
+        title="Moveoklinikken Podcast"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
     </div>
-  );
-}
+
+  </div>
+</section>
