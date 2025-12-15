@@ -13,22 +13,74 @@ html, body {
   line-height: 1.6;
 }
 
-/* Fjern blå lenker globalt */
 a {
   color: #111;
   text-decoration: none;
 }
 
-a:hover {
-  opacity: 0.75;
-}
+/* ================= CONTAINERS ================= */
 
-/* ================= LAYOUT ================= */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 .page-wrapper {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 20px;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-logo {
+  height: 40px;
+}
+
+.header-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav a {
+  font-weight: 500;
+}
+
+.header-cta {
+  background: #00c8c8;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
 }
 
 /* ================= HERO ================= */
@@ -92,11 +144,13 @@ a:hover {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .section-text {
   font-size: 18px;
   color: #333;
+  text-align: center;
 }
 
 /* ================= TJENESTER ================= */
@@ -156,7 +210,6 @@ a:hover {
   margin: 0 auto 40px;
 }
 
-/* DESKTOP-SIKKER VIDEO */
 .podcast-video {
   width: 100%;
   max-width: 800px;
@@ -175,6 +228,26 @@ a:hover {
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
 }
 
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #f5f5f5;
+  border-top: 1px solid #ddd;
+  margin-top: 80px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-inner p {
+  font-size: 14px;
+  color: #555;
+}
+
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 900px) {
@@ -186,12 +259,6 @@ a:hover {
   .hero-image {
     width: 300px;
     height: 380px;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-title {
-    font-size: 34px;
   }
 }
 
