@@ -4,9 +4,10 @@ export default function Home() {
   return (
     <div>
 
-      {/* HERO */}
+      {/* ================= HERO ================= */}
       <section className="hero-section">
         <div className="hero-wrapper">
+
           <img
             src="/portrett.jpg"
             alt="Thomas Nilsen"
@@ -14,17 +15,24 @@ export default function Home() {
           />
 
           <div className="hero-text">
-            <h1 className="hero-title">Smerter, stress eller tankekjør?</h1>
-            <p className="hero-subtitle">Jeg hjelper deg videre.</p>
+            <h1 className="hero-title">
+              Smerter, stress eller tankekjør?
+            </h1>
+            <p className="hero-subtitle">
+              Jeg hjelper deg videre.
+            </p>
 
-            <a href="mailto:thomas@moveoklinikken.no" className="hero-button">
+            <a
+              href="mailto:thomas@moveoklinikken.no"
+              className="hero-button"
+            >
               Bestill time
             </a>
           </div>
         </div>
       </section>
 
-      {/* MAIN CONTENT */}
+      {/* ================= MAIN ================= */}
       <div className="page-wrapper">
 
         {/* INTRO */}
@@ -44,50 +52,63 @@ export default function Home() {
           <div className="service-grid">
             <Link href="/fysioterapi" className="service-card">
               <h3>Fysioterapi</h3>
-              <p>Undersøkelse, behandling og oppfølging.</p>
+              <p>Undersøkelse, behandling og aktiv oppfølging.</p>
             </Link>
 
             <Link href="/osteopati" className="service-card">
               <h3>Osteopati</h3>
-              <p>Helhetlig forståelse av kroppen og årsak til smerte.</p>
+              <p>Helhetlig behandling av kropp og funksjon.</p>
             </Link>
 
             <Link href="/kognitiv-terapi" className="service-card">
               <h3>Kognitiv terapi</h3>
-              <p>Håndtering av tanker, stress og emosjonelle plager.</p>
+              <p>Arbeid med tanker, stress og mestring.</p>
             </Link>
 
             <Link href="/lopsanalyse" className="service-card">
               <h3>Løpsanalyse</h3>
-              <p>For bedre teknikk, fart og skadeforebygging.</p>
+              <p>Teknikk, skadeforebygging og prestasjon.</p>
             </Link>
 
             <Link href="/terskeltest" className="service-card">
               <h3>Terskeltest</h3>
-              <p>Testing for optimal treningsstyring.</p>
+              <p>Testing for bedre treningsstyring.</p>
             </Link>
 
             <Link href="/podcast" className="service-card">
               <h3>Podcast</h3>
-              <p>Samtaler om helse, trening og mestring.</p>
+              <p>Samtaler om helse, smerte og mestring.</p>
             </Link>
           </div>
         </section>
+      </div>
 
-        {/* KONTAKT */}
-        <section className="section">
-          <h2 className="section-title">Kontakt</h2>
-          <p className="section-text">
-            For timeforespørsel eller spørsmål – send e-post til:
+      {/* ================= PODCAST ================= */}
+      <section className="podcast-section">
+        <div className="podcast-inner">
+
+          <h2 className="podcast-title">Podcast & faglige samtaler</h2>
+
+          <p className="podcast-intro">
+            Her deler jeg refleksjoner og samtaler om smerter, stress, helse,
+            trening og mental mestring – sett fra et helhetlig perspektiv.
           </p>
 
-          <a className="contact-email" href="mailto:thomas@moveoklinikken.no">
-            thomas@moveoklinikken.no
-          </a>
-        </section>
+          <div className="podcast-card">
+            <iframe
+              src="https://www.youtube.com/embed?listType=user_uploads&list=Moveoklinikken"
+              title="Moveoklinikken Podcast"
+              allowFullScreen
+            ></iframe>
+          </div>
 
-      </div>
+          <a href="/podcast" className="podcast-link">
+            Se alle episoder →
+          </a>
+
+        </div>
+      </section>
+
     </div>
   );
 }
-
