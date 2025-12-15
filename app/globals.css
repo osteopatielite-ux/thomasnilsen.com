@@ -201,7 +201,7 @@ a:hover {
   color: #444;
 }
 
-/* ================= PODCAST ================= */
+/* ================= PODCAST (DESKTOP SAFE) ================= */
 
 .podcast-section {
   background: #f7f8fa;
@@ -227,24 +227,23 @@ a:hover {
   margin: 0 auto 40px;
 }
 
-.podcast-card {
-  max-width: 800px;
-  margin: 0 auto 30px;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-}
-
-.podcast-card iframe {
+/* Dette er nøkkelen */
+.podcast-video {
   width: 100%;
-  height: 450px;
-  border: none;
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  position: relative;
 }
 
-.podcast-link {
-  font-size: 16px;
-  font-weight: 600;
-  color: #00a8a8;
+.podcast-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
 }
 
 /* ================= FOOTER ================= */
