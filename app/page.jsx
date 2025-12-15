@@ -4,110 +4,65 @@ export default function Home() {
   return (
     <div>
 
-      {/* ================= HERO ================= */}
-      <section className="hero-section">
-        <div className="hero-wrapper">
+      {/* HERO */}
+      <section className="hero">
+        <img
+          src="/portrett.jpg"
+          alt="Thomas Nilsen"
+          className="hero-image"
+        />
 
-          <img
-            src="/portrett.jpg"
-            alt="Thomas Nilsen"
-            className="hero-image"
-          />
+        <h1 className="hero-title">
+          Smerter, stress eller tankekjør?
+        </h1>
 
-          <div className="hero-text">
-            <h1 className="hero-title">
-              Smerter, stress eller tankekjør?
-            </h1>
+        <p className="hero-subtitle">
+          Jeg hjelper deg videre.
+        </p>
 
-            <p className="hero-subtitle">
-              Jeg hjelper deg videre.
-            </p>
-
-            <a
-              href="mailto:thomas@moveoklinikken.no"
-              className="hero-button"
-            >
-              Bestill time
-            </a>
-          </div>
-
-        </div>
+        <a
+          href="mailto:thomas@moveoklinikken.no"
+          className="hero-button"
+        >
+          Bestill time
+        </a>
       </section>
 
-      {/* ================= MAIN ================= */}
-      <div className="page-wrapper">
+      {/* CONTENT */}
+      <main className="content">
 
-        {/* INTRO */}
-        <section className="section">
-          <h2 className="section-title">Velkommen</h2>
-          <p className="section-text">
+        <section>
+          <h2>Velkommen</h2>
+          <p>
             Jeg heter Thomas Nilsen og jobber ved Moveoklinikken i Bodø.
-            Jeg tilbyr fysioterapi, osteopati og kognitiv terapi – med fokus på
-            smerter, stress, overbelastning og individuelt tilpasset behandling.
+            Jeg tilbyr fysioterapi, osteopati og kognitiv terapi med fokus
+            på smerter, stress og mestring.
           </p>
         </section>
 
-        {/* TJENESTER */}
-        <section className="section">
-          <h2 className="section-title">Tjenester</h2>
+        <section>
+          <h2>Tjenester</h2>
 
-          <div className="service-grid">
-            <Link href="/fysioterapi" className="service-card">
-              <h3>Fysioterapi</h3>
-              <p>Undersøkelse, behandling og aktiv oppfølging.</p>
-            </Link>
-
-            <Link href="/osteopati" className="service-card">
-              <h3>Osteopati</h3>
-              <p>Helhetlig behandling av kropp og funksjon.</p>
-            </Link>
-
-            <Link href="/kognitiv-terapi" className="service-card">
-              <h3>Kognitiv terapi</h3>
-              <p>Arbeid med tanker, stress og mestring.</p>
-            </Link>
-
-            <Link href="/lopsanalyse" className="service-card">
-              <h3>Løpsanalyse</h3>
-              <p>Teknikk, skadeforebygging og prestasjon.</p>
-            </Link>
-
-            <Link href="/terskeltest" className="service-card">
-              <h3>Terskeltest</h3>
-              <p>Testing for bedre treningsstyring.</p>
-            </Link>
-
-            <Link href="/podcast" className="service-card">
-              <h3>Podcast</h3>
-              <p>Samtaler om helse, smerte og mestring.</p>
-            </Link>
-          </div>
+          <ul className="services">
+            <li><Link href="/fysioterapi">Fysioterapi</Link></li>
+            <li><Link href="/osteopati">Osteopati</Link></li>
+            <li><Link href="/kognitiv-terapi">Kognitiv terapi</Link></li>
+            <li><Link href="/lopsanalyse">Løpsanalyse</Link></li>
+            <li><Link href="/terskeltest">Terskeltest</Link></li>
+          </ul>
         </section>
 
-      </div>
-
-      {/* ================= PODCAST ================= */}
-      <section className="podcast-section">
-        <div className="podcast-inner">
-
-          <h2 className="podcast-title">Podcast & faglige samtaler</h2>
-
-          <p className="podcast-intro">
-            Samtaler og refleksjoner rundt smerter, stress, helse,
-            prestasjon og mestring – sett fra et helhetlig perspektiv.
+        <section>
+          <h2>Kontakt</h2>
+          <p>
+            Ta kontakt på e-post:
           </p>
+          <a href="mailto:thomas@moveoklinikken.no">
+            thomas@moveoklinikken.no
+          </a>
+        </section>
 
-          <div className="podcast-video">
-            <iframe
-              src="https://www.youtube.com/embed?listType=user_uploads&list=Moveoklinikken"
-              title="Moveoklinikken Podcast"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-        </div>
-      </section>
+      </main>
 
     </div>
   );
