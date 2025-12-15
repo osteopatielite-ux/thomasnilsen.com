@@ -18,6 +18,7 @@ export default function Home() {
             <h1 className="hero-title">
               Smerter, stress eller tankekjør?
             </h1>
+
             <p className="hero-subtitle">
               Jeg hjelper deg videre.
             </p>
@@ -29,6 +30,7 @@ export default function Home() {
               Bestill time
             </a>
           </div>
+
         </div>
       </section>
 
@@ -81,27 +83,32 @@ export default function Home() {
             </Link>
           </div>
         </section>
+
       </div>
 
-     {/* ================= PODCAST ================= */}
-<section className="podcast-section">
-  <div className="podcast-inner">
+      {/* ================= PODCAST ================= */}
+      <section className="podcast-section">
+        <div className="podcast-inner">
 
-    <h2 className="podcast-title">Podcast & faglige samtaler</h2>
+          <h2 className="podcast-title">Podcast & faglige samtaler</h2>
 
-    <p className="podcast-intro">
-      Her deler jeg samtaler og refleksjoner rundt smerter, stress,
-      helse og mestring.
-    </p>
+          <p className="podcast-intro">
+            Samtaler og refleksjoner rundt smerter, stress, helse,
+            prestasjon og mestring – sett fra et helhetlig perspektiv.
+          </p>
 
-    <div className="podcast-video">
-      <iframe
-        src="https://www.youtube.com/embed?listType=user_uploads&list=Moveoklinikken"
-        title="Moveoklinikken Podcast"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+          <div className="podcast-video">
+            <iframe
+              src="https://www.youtube.com/embed?listType=user_uploads&list=Moveoklinikken"
+              title="Moveoklinikken Podcast"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+        </div>
+      </section>
+
     </div>
-
-  </div>
-</section>
+  );
+}
